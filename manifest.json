@@ -3,9 +3,14 @@
     "name": "Pomodoro Clock",
     "description": "Pomodoro Time Managment tool for the Chrome browser.",
     "version": "1.0",
+    "icons": {
+        "16": "alarm-clock.png",
+        "48": "alarm-clock.png",
+        "128": "alarm-clock.png"
+    },
 
     "browser_action": {
-        "default_icon": "alarm-clock.png"
+        "default_popup": "clock.html"
     },
     "permissions": [
         "notifications"
