@@ -1,4 +1,13 @@
 {
     "manifest_version": 2,
-    "name": "Pomodoro"
+    "name": "Pomodoro Clock",
+    "description": "Pomodoro Time Managment tool for the Chrome browser.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "alarm-clock.png"
+    },
+    "permissions": [
+        "notifications"
+    ]
 }
