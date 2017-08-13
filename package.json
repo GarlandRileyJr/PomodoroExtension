@@ -1,0 +1,22 @@
+{
+  "name": "pomodoro-extension",
+  "version": "1.0.0",
+  "description": "Pomodoro Time Manager Chrome Extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flex-Luthor/PomodoroExtension.git"
+  },
+  "author": "Garland L. Riley Jr.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Flex-Luthor/PomodoroExtension/issues"
+  },
+  "homepage": "https://github.com/Flex-Luthor/PomodoroExtension#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
