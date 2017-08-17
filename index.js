@@ -4,9 +4,5 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const stop = document.getElementById('stop');
     const reset = document.getElementById('reset');
     start.onclick = testChange
-
-    let timer = () => {
-    }
-    
   });
 
