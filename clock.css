@@ -1,7 +1,15 @@
 #clockFace {
-    height: 150px;
-    width: 150px;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
+}
+
+
+#start {
+    background-color: green;
+}
+
+#stop {
+    background-color: red;
+}
+
+#reset {
+    background-color: gray;
 }
