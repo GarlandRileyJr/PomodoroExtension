@@ -16,7 +16,5 @@
     "url": "https://github.com/Flex-Luthor/PomodoroExtension/issues"
   },
   "homepage": "https://github.com/Flex-Luthor/PomodoroExtension#readme",
-  "dependencies": {
-    "bootstrap": "^3.3.7"
-  }
+  "dependencies": {}
 }
