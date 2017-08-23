@@ -9,9 +9,13 @@ document.addEventListener("DOMContentLoaded", function(e) {
     let endTime = new Date().getTime() + 1500000
     start.addEventListener('click', ()=>{
       console.log(endTime)
+
+      let x = 0
       setInterval(() => {
         // call function that changes the innerHTML of the clockFace element every millisecond counting down from 25m 00s
-      })
+        clockFace.innerHTML = x
+        return x++
+      }, 1000)
     })
     
 });
