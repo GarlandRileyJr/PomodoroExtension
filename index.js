@@ -6,16 +6,31 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const stop = document.getElementById('stop');
     const reset = document.getElementById('reset');
 
-    let endTime = new Date().getTime() + 1500000
-    start.addEventListener('click', ()=>{
-      console.log(endTime)
+    let endTime = new Date().getTime() + 1500000;
 
-      let x = 0
-      setInterval(() => {
+    let x = 0;
+
+    let timer;
+    let timerRunning = false;
+    start.addEventListener('click', () => {
+      timerRunning = true
+      timer = setInterval(() => {
         // call function that changes the innerHTML of the clockFace element every millisecond counting down from 25m 00s
         clockFace.innerHTML = x
         return x++
-      }, 1000)
+      }, 1000);
+    })
+
+    stop.addEventListener('click', ()=>{
+      timerRunning = false;
+      clearInterval(timer)
+    })
+
+    reset.addEventListener('click', () => {
+      if(x !== 0 && !timerRunning) {
+        x = 0;
+        clockFace.innerHTML = x;
+      }
     })
     
 });
