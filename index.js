@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const stop = document.getElementById('stop');
     const reset = document.getElementById('reset');
 
-
     let endTime = new Date().getTime() + 1500000;
 
     let x = 0;
