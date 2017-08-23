@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function(e) {
     console.log("DOM fully loaded and parsed");
     const clockFace = document.getElementById('clockFace')
@@ -35,3 +36,4 @@ document.addEventListener("DOMContentLoaded", function(e) {
 //     document.getElementById("clockFace").innerHTML = "EXPIRED";
 //   }
 // }, 1000);
+
