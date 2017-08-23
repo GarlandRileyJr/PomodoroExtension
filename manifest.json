@@ -8,9 +8,6 @@
         "48": "alarm-clock.png",
         "128": "alarm-clock.png"
     },
-    "background": {
-        "scripts": ["index.js"]
-    },
 
     "browser_action": {
         "default_popup": "clock.html"
@@ -18,7 +15,8 @@
     "permissions": [
         "notifications",
         "<all_urls>",
-        "alarms"
+        "alarms",
+        "tabs"
     ],
     "content_scripts":[{
         "matches": ["<all_urls>"],
