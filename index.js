@@ -1,6 +1,5 @@
 
 document.addEventListener("DOMContentLoaded", function(e) {
-
   const clockFace = document.getElementById('clockFace')
   const start = document.getElementById('start'); 
   const stop = document.getElementById('stop');
@@ -39,6 +38,5 @@ document.addEventListener("DOMContentLoaded", function(e) {
       startTime = 1500000;
       clockFace.innerHTML = currentTimeMin(startTime) + "m " + currentTimeSec(startTime) + "0s";
     }
-  })
-  
+  })  
 });
