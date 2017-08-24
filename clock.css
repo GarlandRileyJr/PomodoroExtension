@@ -2,7 +2,6 @@
     text-align: center;
 }
 
-
 #start {
     background-color: green;
 }
@@ -13,4 +12,15 @@
 
 #reset {
     background-color: gray;
+}
+
+.container {
+    height: 250px;
+    width: 300px;
+}
+
+.clockFace {
+    border: 2px solid black;
+    height: 50px;
+    widows: 75px
 }
