@@ -1,5 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function(e) {
+<<<<<<< HEAD
   const clockFace = document.getElementById('clockFace')
   const start = document.getElementById('start'); 
   const stop = document.getElementById('stop');
@@ -39,4 +40,24 @@ document.addEventListener("DOMContentLoaded", function(e) {
       clockFace.innerHTML = currentTimeMin(startTime) + ":" + currentTimeSec(startTime) + "0";
     }
   })
+=======
+    console.log("DOM fully loaded and parsed");
+    const clockFace = document.getElementById('clockFace')
+    const start = document.getElementById('start'); 
+    const stop = document.getElementById('stop');
+    const reset = document.getElementById('reset');
+
+    let endTime = new Date().getTime() + 1500000
+    start.addEventListener('click', ()=>{
+      console.log(endTime)
+
+      let x = 0
+      setInterval(() => {
+        // call function that changes the innerHTML of the clockFace element every millisecond counting down from 25m 00s
+        clockFace.innerHTML = x
+        return x++
+      }, 1000)
+    })
+    
+>>>>>>> c88e5f067204b452b38c61fcb8ae84fc04219c27
 });
