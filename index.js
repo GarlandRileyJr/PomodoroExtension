@@ -1,6 +1,5 @@
 
 document.addEventListener("DOMContentLoaded", function(e) {
-
   const clockFace = document.getElementById('clockFace')
   const start = document.getElementById('start'); 
   const stop = document.getElementById('stop');
