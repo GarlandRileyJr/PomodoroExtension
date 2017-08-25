@@ -39,4 +39,5 @@ document.addEventListener("DOMContentLoaded", function(e) {
       clockFace.innerHTML = currentTimeMin(startTime) + ":" + currentTimeSec(startTime) + "0";
     }
   })
+  
 });
