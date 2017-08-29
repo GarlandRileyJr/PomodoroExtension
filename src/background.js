@@ -23,10 +23,12 @@ document.addEventListener("DOMContentLoaded", function(e) {
   // };
 
   let started = start.addEventListener('click', () => {
+
     timerRunning = true;
     timer = setInterval(() => {
       // call function that changes the innerHTML of the clockFace element every millisecond counting down from 25m 00s
       if (startTime === 1500000) {startTime = startTime - 1000}
+
       clockFace.innerHTML = `${currentTimeMin(startTime)}:${currentTimeSec(startTime)}`;
       if(startTime === 0) {
         timerRunning = false;
@@ -35,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
       return startTime = startTime - 1000;
     }, 1000);
     
+
   });
 
   let stopped = stop.addEventListener('click', () => {
