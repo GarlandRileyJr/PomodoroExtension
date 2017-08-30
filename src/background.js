@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     stop = document.getElementById('stop'),
     reset = document.getElementById('reset');
 
-  let startTime = 10000;
+  let startTime = 10000; // this needs to be reset to 1500000 for currect startTime
 
   let currentTimeMin = (time) => {
     return Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
@@ -28,8 +28,17 @@ document.addEventListener("DOMContentLoaded", function(e) {
     timer = setInterval(() => {
       // call function that changes the innerHTML of the clockFace element every millisecond counting down from 25m 00s
       if (startTime === 1500000) {startTime = startTime - 1000}
-
-      clockFace.innerHTML = `${currentTimeMin(startTime)}:${currentTimeSec(startTime)}`;
+      if(startTime < 60000) {
+        if(startTime < 10000) {
+          clockFace.innerHTML = `0${currentTimeMin(startTime)}:0${currentTimeSec(startTime)}`;
+        }
+        else {
+          clockFace.innerHTML = `0${currentTimeMin(startTime)}:${currentTimeSec(startTime)}`
+        }
+      }
+      else {
+        clockFace.innerHTML = `${currentTimeMin(startTime)}:${currentTimeSec(startTime)}`;
+      }
       if(startTime === 0) {
         timerRunning = false;
         stopped();
