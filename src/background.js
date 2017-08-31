@@ -17,10 +17,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
   let timer;
   let timerRunning = false;
-  // let settings = {
-  //   pomodoro: startTime,
-  //   break: startTime/5
-  // };
 
   let started = start.addEventListener('click', () => {
 
@@ -40,8 +36,14 @@ document.addEventListener("DOMContentLoaded", function(e) {
         clockFace.innerHTML = `${currentTimeMin(startTime)}:${currentTimeSec(startTime)}`;
       }
       if(startTime === 0) {
-        timerRunning = false;
-        stopped();
+        // timerRunning = false;
+        // stopped();
+        
+        // this conditional should trigger a function to play the sound file from the assets folder.
+        // it should also trigger an alert notification that makes the user click to stop the sound
+        // and start the break timer. Still unsure about the process for transitioning from break time
+        // back to pomodoro time
+
       }
       return startTime = startTime - 1000;
     }, 1000);
