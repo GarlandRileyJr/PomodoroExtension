@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function(e) {
   const clockFace = document.getElementById('clockFace'),
     start = document.getElementById('start'),
@@ -71,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function(e) {
   });
   
 });
+
