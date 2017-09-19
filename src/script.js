@@ -7,3 +7,6 @@
 // to go before the alarm goes off. when you hit start it'll take that time
 // as the amount of time before the alert. the reset button should clear all
 // alarms and allow you to hit start again as a new alarm cycle.
+
+// make a background html and js that are always running. this should allow the timer to persist.
+// work on page to page communication
